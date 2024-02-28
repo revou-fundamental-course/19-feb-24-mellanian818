@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website dengan Navbar dan Banner</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-logo">
+        <a href="#"><img src="logodummy.png" alt="Logo" /></a>
+      </div>
+      <div class="navbar-menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Our Profile</a></li>
+          <li><a href="#">Portofolio</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="banner">
+      <img src="yellow.jpg" alt="Banner Image" />
+      <div class="banner-text">
+        <h1>Hi Mella, Welcome To Website</h1>
+        <p>Ini adalahwebsite latihan saya</p>
+      </div>
+    </div>
+
+    <!---Our Profile-->
+    <section class="our-profile-section">
+      <div class="section-content">
+        <h2>About Us</h2>
+        <p>
+          PContrary to popular belief, Lorem Ipsum is not simply random text. It
+          has roots in a piece of classical Latin literature from 45 BC, making
+          it over 2000 years old. Richard McClintock, a Latin professor at
+          Hampden-Sydney College in Virginia, looked up one of the more obscure
+          Latin words, consectetur, from a Lorem Ipsum passage, and going
+          through the cites of the word in classical literature, discovered the
+          undoubtable source. Lorem Ipsum comes from sections 1.10.32 and
+          1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and
+          Evil) by Cicero, written in 45 BC. This book is a treatise on the
+          theory of ethics, very popular during the Renaissance. The first line
+          of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in
+          section 1.10.32. The standard chunk of Lorem Ipsum used since the
+          1500s is reproduced below for those interested. Sections 1.10.32 and
+          1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also
+          reproduced in their exact original form, accompanied by English
+          versions from the 1914 translation by H. Rackham.
+        </p>
+        <h3>Visi:</h3>
+        <p>Menjadi perusahaan terkemuka dalam industri XYZ.</p>
+        <h3>Misi:</h3>
+        <ul>
+          <li>
+            Menjadi sebuah perusahaan teknologi informasi dan komunikasi yang
+            mampu bersaing dalam dunia global saat ini.
+          </li>
+          <li>
+            Menjadi sebuah perusahaan yang mampu memberikan kontribusi baik
+            dalam bidang penelitian teknologi informasi dan komunikasi maupun
+            pengabdian kepada masyarakat.
+          </li>
+        </ul>
+        <h3>Tata Nilai Perusahaan:</h3>
+        <ul>
+          <li>
+            FOKUS. Mengedepankan dan mendedikasikan diri pada pengembangan ICT
+            yang komprehensif dan transparan.
+          </li>
+          <li>
+            INTEGRITAS. Mampu mewujudkan keinginan pelanggan dengan konsep duduk
+            bersama dalam lingkup persoalan.
+          </li>
+          <li>
+            SINERGI. Mengantisipasi lingkungan usaha yang berkembang saat ini
+            maupun yang akan datang untuk dapat tumbuh dan berkembang dalam
+            lingkungan usaha yang sehat.
+          </li>
+          <li>
+            EXCELLENCE. Berorientasi pada kepuasan dan keinginan pelanggan
+            dengan mengedepankan ketepatan kualitas dan hasil yang memuaskan.
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!---end-->
+
+    <section class="section">
+      <div class="section-content-1">
+        <h2>Portofolio</h2>
+        <div class="image-container">
+          <figure>
+            <img src="mell.jpg" alt="Image 1" />
+            <figcaption>Portfolio 1</figcaption>
+          </figure>
+          <figure>
+            <img src="mell.jpg" alt="Image 2" />
+            <figcaption>Portfolio 2</figcaption>
+          </figure>
+          <figure>
+            <img src="mell.jpg" alt="Image 3" />
+            <figcaption>Portfolio 3</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-us-section">
+      <div class="section-content" id="contact">
+        <h2>Contact Us</h2>
+        <div class="form-container">
+          <form
+            id="contactForm"
+            action="#"
+            method="POST"
+            onsubmit="return validateForm()"
+          >
+            <div class="form-group">
+              <label for="name">Nama:</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="dob">Tanggal Lahir:</label>
+              <input type="date" id="dob" name="dob" required />
+            </div>
+            <div class="form-group">
+              <label>Jenis Kelamin:</label>
+              <input
+                type="radio"
+                id="male"
+                name="gender"
+                value="male"
+                required
+              />Laki-laki
+              <input
+                type="radio"
+                id="female"
+                name="gender"
+                value="female"
+                required
+              />Perempuan
+            </div>
+            <div class="form-group">
+              <label for="message">Pesan:</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!---Footer-->
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2024 Nama Perusahaan. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!--<div id="submittedValues" style="display:none;">
+        <h2>Formulir Terkirim</h2>
+        <p>Nama: <span id="submittedName"></span></p>
+        <p>Tanggal Lahir: <span id="submittedDOB"></span></p>
+        <p>Jenis Kelamin: <span id="submittedGender"></span></p>
+        <p>Pesan: <span id="submittedMessage"></span></p>
+      </div>-->
+
+    <script src="script.js"></script>
+  </body>
+</html>
